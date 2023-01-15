@@ -1,14 +1,12 @@
 package br.com.teste.attornatus.dto;
 
-import br.com.teste.attornatus.entity.AddressEntity;
 
-import lombok.Data;
+
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-@Data
 public class AddressDto {
 
     private String street;

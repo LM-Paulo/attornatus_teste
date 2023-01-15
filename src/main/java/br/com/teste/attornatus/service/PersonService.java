@@ -1,14 +1,12 @@
 package br.com.teste.attornatus.service;
 
-import br.com.teste.attornatus.dto.AddressDto;
+
 import br.com.teste.attornatus.dto.PersonDto;
 import br.com.teste.attornatus.entity.AddressEntity;
 import br.com.teste.attornatus.entity.PersonEntity;
 import br.com.teste.attornatus.exceptions.BusinessException;
 import br.com.teste.attornatus.repository.PersonRepository;
 import javax.persistence.NoResultException;
-
-import org.hibernate.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;

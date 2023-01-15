@@ -2,11 +2,10 @@ package br.com.teste.attornatus.entity;
 
 import br.com.teste.attornatus.dto.AddressDto;
 import jakarta.persistence.*;
-
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.List;
+
 
 
 @Table(name = "address")

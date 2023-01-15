@@ -2,13 +2,11 @@ package br.com.teste.attornatus.controller;
 
 import br.com.teste.attornatus.dto.PersonDto;
 import br.com.teste.attornatus.service.PersonService;
-import org.hibernate.ObjectNotFoundException;
 import org.jboss.logging.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import javax.persistence.NoResultException;
 
 
@@ -31,9 +29,7 @@ public class PersonController {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.append("don't successfully created person -> ");
             stringBuilder.append(ex.getMessage());
-            logger.error(stringBuilder);
-            //logger.error(stringBuilder, Logger.Level.ERROR,ex.getMessage());
-
+            logger.log(Logger.Level.ERROR,stringBuilder);
             return ResponseEntity.ok(stringBuilder.toString());
         }
 

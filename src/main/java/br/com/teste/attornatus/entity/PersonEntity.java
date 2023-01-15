@@ -2,7 +2,6 @@ package br.com.teste.attornatus.entity;
 
 import br.com.teste.attornatus.dto.PersonDto;
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import lombok.Getter;
 import lombok.Setter;

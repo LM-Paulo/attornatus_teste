@@ -1,7 +1,6 @@
 package br.com.teste.attornatus.controller;
 
 import br.com.teste.attornatus.dto.AddressDto;
-import br.com.teste.attornatus.repository.AddressRepository;
 import br.com.teste.attornatus.service.AddressService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

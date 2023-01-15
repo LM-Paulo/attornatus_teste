@@ -2,14 +2,11 @@ package br.com.teste.attornatus.service;
 
 import br.com.teste.attornatus.dto.AddressDto;
 import br.com.teste.attornatus.entity.AddressEntity;
-import br.com.teste.attornatus.entity.PersonEntity;
 import br.com.teste.attornatus.exceptions.BusinessException;
 import br.com.teste.attornatus.repository.AddressRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.Optional;
 
 
 @Service
