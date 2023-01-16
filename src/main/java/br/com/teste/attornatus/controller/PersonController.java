@@ -46,7 +46,10 @@ public class PersonController {
         try {
             return ResponseEntity.ok(personService.listPerson(direction,properties,page,size));
         }catch (NoResultException ex){
-            return ResponseEntity.ok("people not found.");
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.append("people not found. -> ");
+            stringBuilder.append(ex.getMessage());
+            return ResponseEntity.ok(stringBuilder);
         }
 
     }

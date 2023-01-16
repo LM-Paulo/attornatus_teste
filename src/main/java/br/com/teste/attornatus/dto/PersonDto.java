@@ -1,7 +1,6 @@
 package br.com.teste.attornatus.dto;
 
 import br.com.teste.attornatus.entity.AddressEntity;
-import br.com.teste.attornatus.entity.PersonEntity;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -18,11 +17,5 @@ public class PersonDto {
     private LocalDateTime birthDate;
 
     private List<AddressEntity> address;
-
-    public void toDto(PersonEntity personEntity){
-        this.name = personEntity.getName();
-        this.birthDate = personEntity.getBirthDate();
-    }
-
 
 }
